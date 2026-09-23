@@ -6,12 +6,12 @@ GameGuard AI takes decision telemetry and returns review cases with interpretabl
 
 ![Synthetic review example](demo.svg)
 
-## Demonstrated functionality — v0.4
+## Demonstrated functionality — v0.5
 
 - Token-authenticated analysis API and a local browser review console with filters, per-hand traces and JSON/CSV report export.
 - CSV adapter and a conservative parser for a subset of English PokerStars text hand histories. Player and table names are pseudonymized locally with an operator-provided key.
 - Five heuristic signal types across timing, repeated operator-defined decision contexts, session duration and shared device pseudonyms. The report says when timing, spot or device signals are unavailable.
-- Descriptive action counts by betting street, sample hand references, Dockerfile, deployment and handoff instructions, synthetic fixtures and **28 passing tests**.
+- Descriptive action counts by betting street, sample hand references, Dockerfile, deployment and handoff instructions, synthetic fixtures and **29 passing tests**.
 - Independent-label evaluation command reports confusion matrix and review burden; real reviewed labels are still needed.
 - No seller-run backend, subscription or hosted AI dependency.
 
@@ -26,9 +26,9 @@ GameGuard AI takes decision telemetry and returns review cases with interpretabl
 
 ## Hand-history limitations
 
-Ordinary text hand histories include actions and hand-start time, but do not provide per-decision reaction times. The parser never invents them. A hand-history-only report can show play patterns and hand traces, yet may contain no actionable RTA flag. The current parser has been tested with a seller-authored syntax fixture, **not a current real PokerStars export**; coverage is limited to documented English Hold'em action lines. Operator event telemetry is required for timing and richer context.
+Ordinary text hand histories include actions and hand-start time, but do not provide per-decision reaction times. The parser never invents them. A hand-history-only report can show play patterns and hand traces, yet may contain no actionable RTA flag. The importer was checked against 15 older public real PokerStars history fixtures (181 actions), **not a current operator export**; coverage is limited to documented English Hold'em action lines. Operator event telemetry is required for timing and richer context.
 
-The buyer should validate on consented, labelled cases in shadow mode. This build does not include a solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; direct HTTP startup and authenticated analysis were checked.
+All 73 player IDs in the external 15-hand sample have insufficient data, and no misconduct labels exist there. The buyer should validate on consented, labelled cases in shadow mode. This build does not include a solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script for a Docker host. Direct HTTP startup and authenticated analysis were checked.
 
 ## Acquisition
 
