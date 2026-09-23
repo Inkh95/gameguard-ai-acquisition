@@ -6,12 +6,13 @@ GameGuard AI takes decision telemetry and returns review cases with interpretabl
 
 ![Synthetic review example](demo.svg)
 
-## Demonstrated functionality — v0.3
+## Demonstrated functionality — v0.4
 
 - Token-authenticated analysis API and a local browser review console with filters, per-hand traces and JSON/CSV report export.
 - CSV adapter and a conservative parser for a subset of English PokerStars text hand histories. Player and table names are pseudonymized locally with an operator-provided key.
 - Five heuristic signal types across timing, repeated operator-defined decision contexts, session duration and shared device pseudonyms. The report says when timing, spot or device signals are unavailable.
-- Descriptive action counts by betting street, sample hand references, Dockerfile, deployment and handoff instructions, synthetic fixtures and **24 passing tests**.
+- Descriptive action counts by betting street, sample hand references, Dockerfile, deployment and handoff instructions, synthetic fixtures and **28 passing tests**.
+- Independent-label evaluation command reports confusion matrix and review burden; real reviewed labels are still needed.
 - No seller-run backend, subscription or hosted AI dependency.
 
 ## Reproducible synthetic example
