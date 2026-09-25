@@ -1,6 +1,6 @@
 # GameGuard AI — Poker Integrity Review Prototype
 
-**Self-hosted review aid for online poker platforms. Private source available for one-time acquisition.**
+**Self-hosted review aid for online poker platforms. Organization source license available now; separate acquisition inquiries welcome.**
 
 GameGuard AI takes decision telemetry and returns review cases with interpretable signals and hand references. Its user is an integrity analyst. It does not automatically penalize players or prove AI/solver use.
 
@@ -30,8 +30,12 @@ Ordinary text hand histories include actions and hand-start time, but do not pro
 
 All 73 player IDs in the external 15-hand sample have insufficient data, and no misconduct labels exist there. The buyer should validate on consented, labelled cases in shadow mode. This build does not include a solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script for a Docker host. Direct HTTP startup and authenticated analysis were checked.
 
+## Buy an organization source license
+
+[Buy GameGuard AI v0.5 on Payhip for €790](https://payhip.com/b/gnjbC). The downloadable source, tests, synthetic demo, Dockerfile and handoff notes come with a **non-exclusive license for one legal organization** under the included LICENSE.md. Applicable taxes are calculated at checkout. No hosting, integration, support, future updates or validated real-world detection performance is included.
+
 ## Acquisition
 
-Private source, tests, synthetic demo, Dockerfile and handoff notes are offered for a proposed **€5,000 one-time source acquisition**, subject to buyer diligence and written transfer terms. This is an asking price, not a verified market valuation or a claim of proven detection performance.
+A separate **proposed €5,000 one-time acquisition** of the seller-owned project/IP is available for discussion, subject to buyer diligence, any prior non-exclusive licenses and written transfer terms. This is an asking price, not a verified market valuation or a claim of proven detection performance.
 
-Contact [the owner on GitHub](https://github.com/Inkh95) to request a supervised technical demonstration. The private source is not published in this repository.
+Contact [the owner on GitHub](https://github.com/Inkh95) to request a supervised technical demonstration or discuss acquisition. The private source is not published in this repository.
