@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.1",
+  "engine_version": "0.3.0",
+  "total_decisions": 360,
+  "cases": [
+    {
+      "player_id": "human_demo",
+      "decisions": 180,
+      "hands": 180,
+      "risk_score": 0,
+      "status": "monitor",
+      "available_signals": {
+        "timing": true,
+        "repeated_spots": true,
+        "device_link": false
+      },
+      "play_profile": {
+        "actions_by_street": {}
+      },
+      "recent_hand_trace": [
+        {
+          "hand_id": "human_demo_hand_81",
+          "actions": [
+            {
+              "event_id": "human_demo_81",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_82",
+          "actions": [
+            {
+              "event_id": "human_demo_82",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_83",
+          "actions": [
+            {
+              "event_id": "human_demo_83",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_84",
+          "actions": [
+            {
+              "event_id": "human_demo_84",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_85",
+          "actions": [
+            {
+              "event_id": "human_demo_85",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_86",
+          "actions": [
+            {
+              "event_id": "human_demo_86",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_87",
+          "actions": [
+            {
+              "event_id": "human_demo_87",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_88",
+          "actions": [
+            {
+              "event_id": "human_demo_88",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_89",
+          "actions": [
+            {
+              "event_id": "human_demo_89",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_9",
+          "actions": [
+            {
+              "event_id": "human_demo_9",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_90",
+          "actions": [
+            {
+              "event_id": "human_demo_90",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_91",
+          "actions": [
+            {
+              "event_id": "human_demo_91",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_92",
+          "actions": [
+            {
+              "event_id": "human_demo_92",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_93",
+          "actions": [
+            {
+              "event_id": "human_demo_93",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_94",
+          "actions": [
+            {
+              "event_id": "human_demo_94",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_95",
+          "actions": [
+            {
+              "event_id": "human_demo_95",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_96",
+          "actions": [
+            {
+              "event_id": "human_demo_96",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_97",
+          "actions": [
+            {
+              "event_id": "human_demo_97",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_98",
+          "actions": [
+            {
+              "event_id": "human_demo_98",
+              "street": null,
+              "action": "raise"
+            }
+          ]
+        },
+        {
+          "hand_id": "human_demo_hand_99",
+          "actions": [
+            {
+              "event_id": "human_demo_99",
+              "street": null,
+              "action": "fold"
+            }
+          ]
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "player_id": "scripted_demo",
+      "decisions": 180,
+      "hands": 180,
+      "risk_score": 45,
+      "status": "review",
+      "available_signals": {
+        "timing": true,
+        "repeated_spots": true,
+        "device_link": false
+      },
+      "play_profile": {
+        "actions_by_street": {}
+      },
+      "recent_hand_trace": [
+        {
+          "hand_id": "scripted_demo_hand_81",
+          "actions": [
+            {
+              "event_id": "scripted_demo_81",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_82",
+          "actions": [
+            {
+              "event_id": "scripted_demo_82",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_83",
+          "actions": [
+            {
+              "event_id": "scripted_demo_83",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_84",
+          "actions": [
+            {
+              "event_id": "scripted_demo_84",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_85",
+          "actions": [
+            {
+              "event_id": "scripted_demo_85",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_86",
+          "actions": [
+            {
+              "event_id": "scripted_demo_86",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_87",
+          "actions": [
+            {
+              "event_id": "scripted_demo_87",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_88",
+          "actions": [
+            {
+              "event_id": "scripted_demo_88",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_89",
+          "actions": [
+            {
+              "event_id": "scripted_demo_89",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_9",
+          "actions": [
+            {
+              "event_id": "scripted_demo_9",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_90",
+          "actions": [
+            {
+              "event_id": "scripted_demo_90",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_91",
+          "actions": [
+            {
+              "event_id": "scripted_demo_91",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_92",
+          "actions": [
+            {
+              "event_id": "scripted_demo_92",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_93",
+          "actions": [
+            {
+              "event_id": "scripted_demo_93",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_94",
+          "actions": [
+            {
+              "event_id": "scripted_demo_94",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_95",
+          "actions": [
+            {
+              "event_id": "scripted_demo_95",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_96",
+          "actions": [
+            {
+              "event_id": "scripted_demo_96",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_97",
+          "actions": [
+            {
+              "event_id": "scripted_demo_97",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_98",
+          "actions": [
+            {
+              "event_id": "scripted_demo_98",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        },
+        {
+          "hand_id": "scripted_demo_hand_99",
+          "actions": [
+            {
+              "event_id": "scripted_demo_99",
+              "street": null,
+              "action": "call"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "signal": "low_latency_variation",
+          "weight": 25,
+          "observed": 0.008,
+          "sample": 180,
+          "hand_ids": [
+            "scripted_demo_hand_0",
+            "scripted_demo_hand_1",
+            "scripted_demo_hand_10",
+            "scripted_demo_hand_100",
+            "scripted_demo_hand_101",
+            "scripted_demo_hand_102",
+            "scripted_demo_hand_103",
+            "scripted_demo_hand_104",
+            "scripted_demo_hand_105",
+            "scripted_demo_hand_106",
+            "scripted_demo_hand_107",
+            "scripted_demo_hand_108",
+            "scripted_demo_hand_109",
+            "scripted_demo_hand_11",
+            "scripted_demo_hand_110",
+            "scripted_demo_hand_111",
+            "scripted_demo_hand_112",
+            "scripted_demo_hand_113",
+            "scripted_demo_hand_114",
+            "scripted_demo_hand_115"
+          ],
+          "description": "Low decision-time variation; can also result from interface or logging artifacts."
+        },
+        {
+          "signal": "repeated_spot_consistency",
+          "weight": 20,
+          "observed": 1.0,
+          "sample": 180,
+          "hand_ids": [
+            "scripted_demo_hand_0",
+            "scripted_demo_hand_1",
+            "scripted_demo_hand_10",
+            "scripted_demo_hand_100",
+            "scripted_demo_hand_101",
+            "scripted_demo_hand_102",
+            "scripted_demo_hand_103",
+            "scripted_demo_hand_104",
+            "scripted_demo_hand_105",
+            "scripted_demo_hand_106",
+            "scripted_demo_hand_107",
+            "scripted_demo_hand_108",
+            "scripted_demo_hand_109",
+            "scripted_demo_hand_11",
+            "scripted_demo_hand_110",
+            "scripted_demo_hand_111",
+            "scripted_demo_hand_112",
+            "scripted_demo_hand_113",
+            "scripted_demo_hand_114",
+            "scripted_demo_hand_115"
+          ],
+          "description": "Highly consistent actions in repeated operator-defined spots; spot quality must be reviewed."
+        }
+      ]
+    }
+  ],
+  "limitations": "Heuristic triage only. Scores are not probabilities of cheating, AI use, or guilt. Missing timing suppresses timing signals. No automatic sanctions. Calibrate with operator-labelled data."
+}
