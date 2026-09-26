@@ -1,41 +1,52 @@
 # GameGuard AI — Poker Integrity Review Prototype
 
-**Self-hosted review aid for online poker platforms. Organization source license available now; separate acquisition inquiries welcome.**
+**For poker operators and integrity teams.** A self-hosted v0.5 prototype that turns poker decision telemetry into analyst review cases with interpretable signals and hand references. It supports human review; it does not prove AI/solver use, measure cheating probability, or sanction players automatically.
 
-GameGuard AI takes decision telemetry and returns review cases with interpretable signals and hand references. Its user is an integrity analyst. It does not automatically penalize players or prove AI/solver use.
+[Illustrative synthetic result](demo.svg) · [Demonstration walkthrough](DEMO.md) · [Български преглед](OVERVIEW_BG.md)
 
-![Synthetic review example](demo.svg)
+> **This repository is a buyer showroom, not a live application.** The source and runnable console are private. Request a supervised technical demonstration and code review.
 
-## Demonstrated functionality — v0.5
+## Analyst workflow
 
-- Token-authenticated analysis API and a local browser review console with filters, per-hand traces and JSON/CSV report export.
-- CSV adapter and a conservative parser for a subset of English PokerStars text hand histories. Player and table names are pseudonymized locally with an operator-provided key.
-- Five heuristic signal types across timing, repeated operator-defined decision contexts, session duration and shared device pseudonyms. The report says when timing, spot or device signals are unavailable.
-- Descriptive action counts by betting street, sample hand references, Dockerfile, deployment and handoff instructions, synthetic fixtures and **29 passing tests**.
-- Independent-label evaluation command reports confusion matrix and review burden; real reviewed labels are still needed.
-- No seller-run backend, subscription or hosted AI dependency.
+1. Import supported CSV or a limited subset of English PokerStars Hold'em text histories. Player and table names are pseudonymized locally with an operator-provided key.
+2. Analyze decisions through a token-authenticated API. Review cases in a local browser console with filters, per-hand traces and JSON/CSV export.
+3. Have an integrity analyst inspect the evidence and missing data before deciding whether further investigation is appropriate.
 
-## Reproducible synthetic example
+![Two synthetic profiles; illustrative only](demo.svg)
 
-| Profile | Decisions / hands | Priority score | Status | Observations |
-|---|---:|---:|---|---|
-| Varied timing/actions | 180 / 180 | 0/100 | Monitor | No triggered signals |
-| Scripted timing/actions | 180 / 180 | 45/100 | Review | Low timing variation and repeated-spot consistency |
+| Seller-authored synthetic profile | Decisions / hands | Review priority | Observation |
+| --- | ---: | ---: | --- |
+| Varied timing/actions | 180 / 180 | 0/100 · Monitor | No triggered signals in this fixture |
+| Scripted timing/actions | 180 / 180 | 45/100 · Review | Low timing variation and repeated-spot consistency |
 
-**This is seller-authored synthetic data.** The scores are review priorities, not probabilities. The fixtures do not measure fraud detection quality or a real-world false-positive rate. Legitimate behavior and logging artifacts can create alerts.
+**The scores are review priorities, not probabilities of misconduct.** These synthetic fixtures cannot establish detection accuracy, sensitivity or false-positive rates. Legitimate behavior and logging artifacts can create alerts.
 
-## Hand-history limitations
+## Implemented scope reported for v0.5
 
-Ordinary text hand histories include actions and hand-start time, but do not provide per-decision reaction times. The parser never invents them. A hand-history-only report can show play patterns and hand traces, yet may contain no actionable RTA flag. The importer was checked against 15 older public real PokerStars history fixtures (181 actions), **not a current operator export**; coverage is limited to documented English Hold'em action lines. Operator event telemetry is required for timing and richer context.
+- Five heuristic signal types covering timing, repeated operator-defined decision contexts, session duration and shared device pseudonyms. Missing timing, spot or device fields are reported rather than invented.
+- Descriptive action counts by betting street, hand references, CSV import, JSON/CSV report export, Dockerfile and handoff instructions.
+- Synthetic fixtures and **29 passing tests reported for the private source**. They cannot be reproduced from this public repository. The independent-label evaluation command needs real reviewed labels.
+- No seller-hosted backend, subscription or hosted AI dependency.
 
-All 73 player IDs in the external 15-hand sample have insufficient data, and no misconduct labels exist there. The buyer should validate on consented, labelled cases in shadow mode. This build does not include a solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script for a Docker host. Direct HTTP startup and authenticated analysis were checked.
+## Evidence and limitations
 
-## Buy an organization source license
+| Available evidence | Supports | Does not establish |
+| --- | --- | --- |
+| [Synthetic example](demo.svg) | Explains a review priority and intended workflow | Real-world fraud detection performance |
+| 15 older public PokerStars histories, 181 actions | A limited parser check | Compatibility with a current operator export or detection of AI/RTA |
+| Internally reported tests | Development regression coverage | Independent audit or production readiness |
 
-[Buy GameGuard AI v0.5 on Payhip for €790](https://payhip.com/b/gnjbC). The downloadable source, tests, synthetic demo, Dockerfile and handoff notes come with a **non-exclusive license for one legal organization** under the included LICENSE.md. Applicable taxes are calculated at checkout. No hosting, integration, support, future updates or validated real-world detection performance is included.
+Ordinary text hand histories contain actions and hand-start times, but generally no per-decision reaction times. The parser does not invent them. All 73 player IDs in the external 15-hand sample have insufficient data and no misconduct labels. Hand-history-only analysis may provide no actionable RTA flag; operator event telemetry is needed for timing and richer context.
 
-## Acquisition
+This build has no solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script. Direct HTTP startup and authenticated analysis were checked internally. See the [demonstration and shadow-mode pilot plan](DEMO.md).
 
-A separate **proposed €5,000 one-time acquisition** of the seller-owned project/IP is available for discussion, subject to buyer diligence, any prior non-exclusive licenses and written transfer terms. This is an asking price, not a verified market valuation or a claim of proven detection performance.
+## Commercial options
 
-Contact [the owner on GitHub](https://github.com/Inkh95) to request a supervised technical demonstration or discuss acquisition. The private source is not published in this repository.
+| Option | Asking price | Scope |
+| --- | ---: | --- |
+| [Organization source license on Payhip](https://payhip.com/b/gnjbC) | €790 | Non-exclusive license for one legal organization under the included LICENSE.md; downloadable source, tests, synthetic demo, Dockerfile and handoff notes. Applicable taxes at checkout. |
+| Project/IP acquisition discussion | €5,000 | Proposed one-time transfer subject to technical diligence, prior non-exclusive licenses and written terms. |
+
+No hosting, integration, support, future updates or validated detection performance is included by default. The acquisition amount is an asking price, not a verified market valuation.
+
+**Next step:** [Contact the owner on GitHub](https://github.com/Inkh95) to arrange a supervised demonstration or discuss a shadow-mode pilot using authorized, anonymized and independently reviewed operator data. No player action should be based on an unvalidated score.
