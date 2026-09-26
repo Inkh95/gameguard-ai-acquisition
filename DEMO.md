@@ -1,6 +1,6 @@
 # GameGuard AI — demonstration walkthrough
 
-This is a **guide to a supervised demonstration**, not a live application or proof of real-world detection performance. The [public image](demo.svg) shows two seller-authored synthetic profiles; their scores are review priorities, not probabilities.
+This is a **guide to a supervised demonstration**, not proof of real-world detection performance. The [interactive replay](https://inkh95.github.io/gameguard-ai-acquisition/) lets you inspect a reduced projection of the [generated synthetic report](synthetic_report.json); it does not run the engine. A local rerun passed 29/29 tests; see [verification notes](EVIDENCE.md). The [public image](demo.svg) shows two seller-authored synthetic profiles; their scores are review priorities, not probabilities.
 
 ## Five-minute technical walkthrough
 
@@ -10,7 +10,7 @@ This is a **guide to a supervised demonstration**, not a live application or pro
 4. **Evidence review.** Open a case, follow signal explanations to referenced hands, and demonstrate missing-data notices, filters and JSON/CSV export.
 5. **Limits.** Explain that legitimate play or logging artifacts can trigger similar heuristics. An analyst must review the evidence; no automatic sanction follows.
 
-This public repository does not contain a runnable input fixture, source code or API recording. Ask the owner for a supervised session to see an actual run and inspect the private code.
+This public repository contains the generated synthetic report and a browser replay, but no private source, runnable input fixture or live API. Ask the owner for a supervised session to see an actual engine run and inspect the private code.
 
 ## Operator pilot acceptance plan
 
