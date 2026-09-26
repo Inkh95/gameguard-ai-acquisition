@@ -2,9 +2,9 @@
 
 **For poker operators and integrity teams.** A self-hosted v0.5 prototype that turns poker decision telemetry into analyst review cases with interpretable signals and hand references. It supports human review; it does not prove AI/solver use, measure cheating probability, or sanction players automatically.
 
-[Illustrative synthetic result](demo.svg) · [Demonstration walkthrough](DEMO.md) · [Български преглед](OVERVIEW_BG.md)
+**[Open interactive synthetic report replay](https://inkh95.github.io/gameguard-ai-acquisition/)** · [Raw generated report](synthetic_report.json) · [Test verification](EVIDENCE.md) · [Demonstration walkthrough](DEMO.md) · [Български преглед](OVERVIEW_BG.md)
 
-> **This repository is a buyer showroom, not a live application.** The source and runnable console are private. Request a supervised technical demonstration and code review.
+> **The interactive page replays recorded synthetic output; it does not run the private engine.** The source and runnable console remain private. Request a supervised technical demonstration and code review.
 
 ## Analyst workflow
 
@@ -25,7 +25,7 @@
 
 - Five heuristic signal types covering timing, repeated operator-defined decision contexts, session duration and shared device pseudonyms. Missing timing, spot or device fields are reported rather than invented.
 - Descriptive action counts by betting street, hand references, CSV import, JSON/CSV report export, Dockerfile and handoff instructions.
-- Synthetic fixtures and **29 passing tests reported for the private source**. They cannot be reproduced from this public repository. The independent-label evaluation command needs real reviewed labels.
+- Synthetic fixtures and **29/29 tests passing in a local rerun on 26 September 2026** ([commands and evidence](EVIDENCE.md)). The private tests cannot be reproduced from this public repository. The independent-label evaluation command needs real reviewed labels.
 - No seller-hosted backend, subscription or hosted AI dependency.
 
 ## Evidence and limitations
@@ -34,11 +34,11 @@
 | --- | --- | --- |
 | [Synthetic example](demo.svg) | Explains a review priority and intended workflow | Real-world fraud detection performance |
 | 15 older public PokerStars histories, 181 actions | A limited parser check | Compatibility with a current operator export or detection of AI/RTA |
-| Internally reported tests | Development regression coverage | Independent audit or production readiness |
+| 29/29 local test rerun | Development regression coverage | Independent audit or production readiness |
 
 Ordinary text hand histories contain actions and hand-start times, but generally no per-decision reaction times. The parser does not invent them. All 73 player IDs in the external 15-hand sample have insufficient data and no misconduct labels. Hand-history-only analysis may provide no actionable RTA flag; operator event telemetry is needed for timing and richer context.
 
-This build has no solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script. Direct HTTP startup and authenticated analysis were checked internally. See the [demonstration and shadow-mode pilot plan](DEMO.md).
+This build has no solver comparison, blackjack module, persistent case database or production certification. Docker build was not run in the seller's environment; the private source includes a Docker verification script. Direct HTTP startup and authenticated analysis were checked internally. The [recorded report](synthetic_report.json) and [interactive replay](https://inkh95.github.io/gameguard-ai-acquisition/) are publicly inspectable. See the [demonstration and shadow-mode pilot plan](DEMO.md).
 
 ## Commercial options
 
